@@ -1,19 +1,20 @@
 # Dylan-Liew.github.io
 
 ### Description
-Dylan Liew's Digital Portfolio 
+Dylan Liew's Digital Portfolio
 
 ### Done With:
 * HTML
 * CSS
 * JS
 * BoostrapMade Template
-  
+
 ### Pages
 * Home
 * About
 * Resume
-* Portfolio
+* Projects
+* Writeups
 * Contact
 
 ### Link
