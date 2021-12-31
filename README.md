@@ -7,7 +7,7 @@ Dylan Liew's Digital Portfolio
 * HTML
 * CSS
 * JS
-* BoostrapMade Template
+* BoostrapMade Template (License: Pro Single)
 
 ### Pages
 * Home
@@ -20,5 +20,3 @@ Dylan Liew's Digital Portfolio
 ### Link
 * [Click Here](https://dylan-liew.github.io/)
 
-### Template By:
-* [BootstrapMade](https://bootstrapmade.com/)

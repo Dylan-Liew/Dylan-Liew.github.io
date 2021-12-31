@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Personal Bootstrap Template</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <title>Dylan-Liew | Portfolio</title>
+  <meta content="Dylan Liew's Portfolio" name="description">
+  <meta content="Dylan Liew Hock Cong" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -18,17 +18,17 @@
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Personal - v2.3.0
+  * Template Name: Personal - v4.7.0
   * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
@@ -47,11 +47,19 @@
 
           <div class="col-lg-8">
             <h2 class="portfolio-title">Cybernetic (Web API)</h2>
-            <div class="owl-carousel portfolio-details-carousel">
-              <img src="assets/img/portfolio/cybernetic-3.png" class="img-fluid" alt="">
-              <img src="assets/img/portfolio/cybernetic-1.png" class="img-fluid" alt="">
-              <img src="assets/img/portfolio/cybernetic-2.png" class="img-fluid" alt="">
-              <img src="assets/img/portfolio/cybernetic-3.png" class="img-fluid" alt="">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/cybernetic-1.png" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/cybernetic-2.png" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/cybernetic-3.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
 
@@ -87,25 +95,25 @@
               <img src="assets/img/portfolio/cybernetic-7.png" class="img-fluid" alt="">
               I am personally in-charged of API regarding product management by admin and product viewing for the customer and tasked with the following vulnerabilities:
               <br>
+              <br>
               <ul class="ml-4" style="list-style-type: square;">
-                <li><strong>Excessive Data Exposure</strong></li>
-                <p>
                   <div class="row">
                     <div class="col-lg-6">
                       <p class="text-center image-header ">Image below shows the insecure API response <br>when the user access their personal information</p>
                       <img src="assets/img/portfolio/cybernetic-4.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6">
-                      Based on the insecure version of Cybernetic, it is found that the API exposes more data than what the client needs. <br> <br>
+                      <li><p><strong>Excessive Data Exposure</strong></p></li>
+                      <p>Based on the insecure version of Cybernetic, it is found that the API exposes more data than what the client needs. <br> <br>
                       Although the data can be filtered on the client site,
                       possible exploitation of Excessive Data Exposure can be performed by sniffing the traffic
-                      to analyze the API responses leaking sensitive data such as credit card information. <br> <br>
+                      to analyze the API responses leaking sensitive data such as credit card information. <br> <br></p>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-lg-6">
+                      <p>The security features I added to the API are:</p>
                       <ul class="ml-4" style="list-style-type: square;">
-                        <p>To secure the API, I have done the following :</p>
                         <li><strong>Filtering</strong><br>
                             Filter Data on the Server Site with the use of the “Exclude” and “Only” build-in function from Marshmallow to whitelist and blacklist the data in the API response.
                         </li>
@@ -128,8 +136,6 @@
                       <img src="assets/img/portfolio/cybernetic-5.png" class="img-fluid" max-height="80%" alt="">
                     </div>
                   </div>
-                </p>
-                <li><strong>Broken Function Level Authorization</strong></li>
                 <br>
                 <div class="row">
                   <div class="col-lg-6">
@@ -137,39 +143,35 @@
                     <img src="assets/img/portfolio/cybernetic-6.png" class="img-fluid" alt="">
                   </div>
                   <div class="col-lg-6">
-                    Based on the insecure version of Cybernetic, it is found that attackers can exploit APIs by sending API requests to API endpoints which the attacker should not have access to. <br><br>
+                    <li><p><strong>Broken Function Level Authorization</strong></p></li>
+                    <p>Based on the insecure version of Cybernetic, it is found that attackers can exploit APIs by sending API requests to API endpoints which the attacker should not have access to. <br><br>
                     <strong>E.G.</strong> Administrative functions being accessible to anonymous users or non-privileged users. <br><br>
-                    I secure the API by using JWT Tokens to authenticate user identity which then validate for administrative rights on administrative functions. <br> <br>
+                    I secure the API by using JWT Tokens to authenticate user identity which then validate for administrative rights on administrative functions. <br> <br></p>
                   </div>
                 </div>
               </ul>
             <p>
-              <hr>
               <strong>Challanges</strong>
               <br>
             </p>
+              <p>The challenges and solution during the development of the project includes:</p>
               <ul class="ml-4" style="list-style-type: square;">
                 <li>
-                  <strong>Challange </strong><br> Inexperience in developing API as this is the first time we make an API as a group.<br><br>
-                  <strong>Solution </strong><br> I reference existing APIs such as Shopee API to understand how does a standard API call works.
+                  Inexperience in developing API : I reference existing APIs such as Shopee API to understand how does a standard API call works.
                 </li>
-                <br>
                 <li>
-                  <strong>Challange </strong><br> Insufficient testing. The insecure cybernetic were tested by Bandit and ZAP however it is insufficient to identify all types of vulnerabilities such as excessive data exposure.<br><br>
-                  <strong>Solution </strong><br> After testing with Bandit and ZAP, I did further white-box and black-box testing manually to ensure everything works normally and identify possible vulnerabilities that are not found.
+                  Automated testing is insufficient : After testing with Bandit and ZAP, I did further testing manually to ensure everything works normally and identify possible vulnerabilities that are not found.
                 </li>
               </ul>
-            </p>
-            <p>
-              <strong>Conclusion</strong>
-              <br>
+              <p><strong>Conclusion</strong></p>
+              <p>
                 Overall, this project has been a completely new challenge as we are given two options of making a web application
-                 which we have done before in previous projects or APIs which is an entirely new thing to us. We decided to try out this new challenge.
-                 It is glad that we have completed the project as a group and met our expectation, although we have no experience in developing an API.
-                  We have also learned many new technologies such as Amazon Web Service, Marshmallow to complete the project.
-                  The key takeaway from this project is never afraid of trying out new things as in the current day and age; we will be able to work things out with rich online resources.
-            </p>
-                <strong>Developed with :</strong>
+                which we have done before in previous projects or APIs which is an entirely new thing to us. We decided to try out this new challenge.
+                It is glad that we have completed the project as a group and met our expectation, although we have no experience in developing an API.
+                We have also learned many new technologies such as Amazon Web Service, Marshmallow to complete the project.
+                The key takeaway from this project is never afraid of trying out new things as in the current day and age; we will be able to work things out with rich online resources.
+              </p>
+                <p><strong>Developed with :</strong></p>
                 <ul class="ml-4" style="list-style-type: square;">
                   <li>Python</li>
                   <li>Flask</li>
@@ -186,24 +188,14 @@
 
   </main><!-- End #main -->
 
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-  </div>
-
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
