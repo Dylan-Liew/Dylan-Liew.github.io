@@ -347,8 +347,7 @@ section .container {
 # About
 --------------------------------------------------------------*/
 .about-me .content h3 {
-  font-weight: 700;
-  font-size: 26px;
+  font-size: 25px;
   color: #30c4ff;
 }
 .about-me .content ul {
@@ -356,7 +355,7 @@ section .container {
   padding: 0;
 }
 .about-me .content ul li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
@@ -371,44 +370,8 @@ section .container {
 }
 .about-me .content p:last-child {
   margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-  padding: 70px 0 60px;
-}
-.counts .count-box {
-  padding: 30px 30px 25px 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.08);
-}
-.counts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 12px;
-  color: #30c4ff;
-  border-radius: 50px;
-  line-height: 0;
-}
-.counts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 600;
-  color: #fff;
-}
-.counts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  text-indent:30px;
+  line-height: 1.8;
 }
 
 /*--------------------------------------------------------------
@@ -438,9 +401,9 @@ section .container {
 }
 .skills .progress-bar {
   width: 1px;
-  height: 10px;
+  height: 6px;
   transition: 0.9s;
-  background-color: #30c4ff;
+  background-color: #69d4ff;
 }
 
 /*--------------------------------------------------------------
@@ -543,10 +506,10 @@ section .container {
 --------------------------------------------------------------*/
 .resume .resume-title {
   font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
+  font-weight: 600;
+  margin-top: 10px;
   margin-bottom: 20px;
-  color: #fff;
+  /* color: #30c4ff; */
 }
 .resume .resume-item {
   padding: 0 0 20px 20px;
@@ -557,11 +520,12 @@ section .container {
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight:450;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #30c4ff;
-  margin-bottom: 10px;
+  /* color: #30c4ff; */
+  color:hwb(197 48% 0%);
+  margin-bottom:15px;
 }
 .resume .resume-item h5 {
   font-size: 16px;
@@ -588,8 +552,10 @@ section .container {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #30c4ff;
-  border: 2px solid #30c4ff;
+  background: hwb(197 48% 0%);
+  /* background: white; */
+  border: 2px solid hwb(197 48% 0%);
+  /* border: 2px solid white; */
 }
 
 /*--------------------------------------------------------------
