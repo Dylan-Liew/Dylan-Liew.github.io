@@ -282,6 +282,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -381,7 +382,8 @@ section .container {
   /* letter-spacing: 0.5em; */
   overflow: hidden;
   padding-right: 0px;
-  animation: typewriter 3.5s steps(35) infinite alternate,
+  margin-top: 5px;
+  animation: typewriter 1.7s steps(17) infinite alternate,
       blink 800ms steps(10) infinite normal;
   border-right: 2px solid #30c4ff;
 }
@@ -391,7 +393,7 @@ section .container {
     width: 0ch; /* Start at zero characters */
   }
   to {
-    width: 35ch; /* Number of characters to show (adjust based on your text) */
+    width: 17ch; /* Number of characters to show (adjust based on your text) */
   }
 }
 
@@ -405,9 +407,26 @@ section .container {
   }
 }
 
+/* Styles for mobile view (up to 991px) */
+@media (max-width: 991px) {
+  .typewriter {
+    margin-top: 16px; 
+    margin-bottom: 0;
+  }
+  .typewriter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+}
+
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+.skills.container {
+  padding: 30px 0px;
+}
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -434,12 +453,16 @@ section .container {
   width: 1px;
   height: 4px;
   transition: 0.9s;
-  background-color: #ffffff66;
+  background-color: #30c4ffd2;
 }
 
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
+.interests.container {
+  padding: 0px 30px 0px 0px;
+}
+
 .interests .icon-box {
   display: flex;
   align-items: center;
