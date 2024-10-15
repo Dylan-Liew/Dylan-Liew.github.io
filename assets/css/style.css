@@ -104,10 +104,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  transition: ease-in-out 0.01ms;
 }
 #header .social-links a:hover {
   background: #30c4ff;
+  color: black;
 }
+
 @media (max-width: 992px) {
   #header h1 {
     font-size: 36px;
@@ -361,28 +364,36 @@ section .container {
   display: flex;
   align-items: center;
 }
+
 .about-me .content ul strong {
   margin-right: 10px;
 }
+
 .about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
   color: #30c4ff;
   line-height: 0;
 }
+
 .about-me .content p:last-child {
   margin-bottom: 0;
-  text-indent:30px;
-  line-height: 1.8;
+  text-indent: 40px;
+  line-height: 2;
+  font-size: 16px;
+}
+
+.my-img {
+  border-radius: 1%;
 }
 
 .typewriter {
   white-space: nowrap;
+  font-size: 21.5px;
   font-family: monospace; /* Ensures each character has the same width */
   /* letter-spacing: 0.5em; */
   overflow: hidden;
   padding-right: 0px;
-  margin-top: 5px;
   animation: typewriter 1.7s steps(17) infinite alternate,
       blink 800ms steps(10) infinite normal;
   border-right: 2px solid #30c4ff;
@@ -460,7 +471,7 @@ section .container {
 # Interests
 --------------------------------------------------------------*/
 .interests.container {
-  padding: 0px 30px 0px 0px;
+  padding: 30px 0px 0px 0px;
 }
 
 .interests .icon-box {
