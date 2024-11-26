@@ -1,7 +1,7 @@
 # Dylan-Liew.github.io
 
 ### Description
-[Dylan-Liew's Digital Portfolio](https://dylan-liew.github.io/)
+Dylan Liew's Digital Portfolio
 
 ### Done With:
 * HTML
@@ -12,5 +12,11 @@
 ### Pages
 * Home
 * About
-* Resume (Work in Progress)
-* Blog (Work in Progress)
+* Resume
+* Projects
+* Writeups
+* Contact
+
+### Link
+* [Click Here](https://dylan-liew.github.io/)
+
