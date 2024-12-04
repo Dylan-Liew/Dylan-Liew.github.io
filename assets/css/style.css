@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
 }
 #header .social-links a:hover {
-  background: #30c4ff;
+  background: #00b7ffa1
 }
 @media (max-width: 992px) {
   #header h1 {
@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
 }
 
@@ -328,10 +328,10 @@ section .container {
 }
 .section-title h2::after {
   content: "";
-  width: 120px;
+  width: 100px;
   height: 1px;
   display: inline-block;
-  background: #30c4ff;
+  background: #aaaaaa;
   margin: 4px 10px;
 }
 .section-title p {
@@ -347,11 +347,6 @@ section .container {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about-me .content h3 {
-  font-size: 25px;
-  /* color: #30c4ff; */
-  color: white;
-}
 .about-me .content ul {
   list-style: none;
   padding: 0;
@@ -370,10 +365,14 @@ section .container {
   color: #30c4ff;
   line-height: 0;
 }
+
 .about-me .content p:last-child {
+  font-size: 0.8em;
   margin-bottom: 0;
-  text-indent:30px;
-  line-height: 1.8;
+}
+
+.about-me .content{
+  margin: auto;
 }
 
 .typewriter {
@@ -459,10 +458,6 @@ section .container {
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
-.interests.container {
-  padding: 0px 30px 0px 0px;
-}
-
 .interests .icon-box {
   display: flex;
   align-items: center;
