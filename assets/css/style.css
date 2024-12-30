@@ -463,27 +463,30 @@ section .container {
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
+
 .interests .icon-box {
-  /* display: flex; */
-  display:none;
+  display: flex;
   align-items: center;
-  padding: 18px;
-  background: rgba(0, 0, 0, 0.579);
+  padding: 20px;
+  margin: 5px 0px;
+  background: rgba(255, 255, 255, 0.08);
   transition: ease-in-out 0.3s;
 }
 .interests .icon-box i {
   font-size: 27px;
+  padding-right: 10px;
   line-height: 1;
 }
 .interests .icon-box h3 {
+  font-weight: 700;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-size: 16px;
-  color: #ffffff;
+  color: #fff;
 }
 .interests .icon-box:hover {
-  background: rgba(255, 255, 255, 0.153);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /*--------------------------------------------------------------
@@ -558,11 +561,10 @@ section .container {
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 20px;
-  /* color: #30c4ff; */
 }
 .resume .resume-item {
   padding: 0 0 20px 20px;
@@ -572,12 +574,12 @@ section .container {
 }
 .resume .resume-item h4 {
   line-height: 18px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight:450;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  /* color: #30c4ff; */
-  color:hwb(197 48% 0%);
+  color: white;
+  /* color:#41c9ff; */
   margin-bottom:15px;
 }
 .resume .resume-item h5 {
@@ -605,10 +607,10 @@ section .container {
   border-radius: 50px;
   left: -6.8px;
   top: 0;
-  background: hwb(197 48% 0%);
-  /* background: white; */
-  border: 2px solid hwb(197 48% 0%);
-  /* border: 2px solid white; */
+  /* background: #41c9ff; */
+  background: #aaaaaa;
+  /* border: 2px solid #41c9ff; */
+  border: 2px solid white;
 }
 
 /*--------------------------------------------------------------
