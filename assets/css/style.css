@@ -290,14 +290,14 @@ section {
   overflow: hidden;
   position: absolute;
   width: 100%;
-  top: 140px;
+  top: 120px;
   bottom: 100%;
   opacity: 0;
   transition: ease-in-out 0.4s;
   z-index: 2;
 }
 section.section-show {
-  top: 100px;
+  top: 80px;
   bottom: auto;
   opacity: 1;
   padding-bottom: 45px;
